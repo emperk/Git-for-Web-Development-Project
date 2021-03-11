@@ -1,4 +1,4 @@
-Here is the link to the finished codepen: https://codepen.io/emperk/pen/wvozGZX?editors=1100
+Here is the link to the finished codepen: https://codepen.io/emperk/pen/abBQwEL?editors=1100
 
 1. What is Semantic HTML? 
 	HTML that gives meaning or context to our code. We use it for better accessibility.
@@ -11,43 +11,92 @@ Here is the link to the finished codepen: https://codepen.io/emperk/pen/wvozGZX?
     5. Name two tags that have required attributes
 	Img and a tags.
     6. What do we put in the head of our HTML document? 
+        The title.
 	
-    7. What is an id? 
+    7. What is an id? ****
+        A single element.
     8. What elements can I add an id to? 
+        Any element.
     9. How many times can I use the same id on a page? 
+        Only once.
     10. What is a class? 
+        It's used to access and manipulate elements with that specific class name.
     11. What elements can I add a class to? 
+        Any element.
     12. How many times can I use the same class on a page? 
+        Any number of times.
     13. How do I get my link to open in a new tab?
+        To ge the link to open in a new tab is target="_blank" in the anchor tag.
     14. What is the alt attribute in the image tag used for? 
+        If the image is refusing to appear the alt attribute will let the user know what the image is a picture of. 
     15. How do I reference an id?
+        In order to reference an id, the syntax is id='referId'
     16. What is the difference between a section and a div
+        A div tag divides elements on a page and a sections is a group of elements and div tags.
     17. What is CSS used for? 
+        The styling/design and presentation of the page.
     18. How to we select an element? Example - every h2 on the page
+        We can select an element using #id{}
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        The class selector can apply to multiple elements but id can only apply to one. Let's say that you want to give two div tags different background colors. You would give the first div tag an id like: id='divOne' and the second: id='divTwo'. For classes, if I have four p tags and I want to give two p tags the same font size and the other two a different size, I would put: class="paraGroupOne" and "paraGroupTwo".
     20. How do we select classes in CSS?
+        If I had h2 tags with a class that said: class="differentFruits", you would select I with a period in the front like this:
+            .differentFruits{
+                background-color: pink;
+            }
     21. How do we select a p element with a single class of “human””?
+        It would look like this: p.human
     22. What is a parent child selector? When would this be useful? 
+        A parent child selector will select all the elements that are a direct child of the specified element. For example, if you are using the <li> tag, you'll also use the <ul> element as well.
     23. How do you select all links within a div with the class of sidebar?
+        div:link, .sidebar{}
     24. What is a pseudo selector?
+        A pseudo selector will specify a particular stat of that selected element. Like when :hover changes a background color when the user's pointer hovers over it. 
     25. What do we use the change the spacing between lines?
+        To change the space between the lines: line-height
     26. What do we use to change the spacing between letters?
+        To change the space between letters: letter-spacing
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        Uppercase
     28. How do I add a 1px border around my div that is dotted and black?
+        div {
+            border: 1px dotted black;
+        }
     29. How do I select everything on the page? 
+        * {}
     30. How do I write a comment in CSS?
+        /* */
     31. How do I find out what file I am in, when I am using the command line? 
+        pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        rm fileName. A majority of the time it does not give you a heads up before you PERMANENTLY delete a file so you could accidentally lose a lot of work instantly.
     34. Why should I use version control? 
+        Version control keeps track of your changes.
     35. How often should I commit to github?
+        Very often & at least every 20 minutes in case something happens to your work.
     36. What is the command we would use to push our repo up to github? 
+        git push -u origin branchName
     37. Walk me through Lambda's git flow. 
+        1. Fork the repo.
+        2. Clone the repo. 
+        3. Use cd command to go to the directory where you want your cloned repo to go.
+        4. Use git clone <link-to-repo> to clone the repo to the directory you're in.
+        5. Cd command to the newly created repo.
+        6. Git checkout -b "file-name" to create branch name.
+        7. Use git add . to add the repo changes. 
+        8. Use git commit -m "Specify what changes you made here"
+        9. Push changes back to GitHub repo.
+        10. Submit pull request.
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        The difference is with inline there is never a new line and only takes up as much width as necessary. Whereas with blcok there is always a new line after the closing tag.
     2. What happens when an element is positioned absolutely? 
+        An element that is positioned absolutely doesn't exist on the normal document layout flow. Rather it sits on its own layer that is separate from everything else. 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
